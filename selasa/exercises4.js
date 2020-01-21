@@ -9,21 +9,6 @@
 // CARI MODUS
 
 function cariModus(arr) {
-  
-    // var arrModus = [], isSame = false;
-  
-    // for (var i = 0; i < arr.length; i++) {
-    //   for (var j = i+1; j < arr.length; j++) {
-    //     if (arr[i] === arr[j]) {
-    //       isSame = true;
-    //       arrModus.push(arr[i]);
-    //     } else {
-    //       isSame = false;
-    //     }
-    //   }
-    // }
-  
-    // return (arrModus[0] === undefined || isSame) ? -1 : arrModus[0];
 
     let modus = [], a = false;
     for (let i = 0; i < arr.length; i++) {
