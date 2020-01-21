@@ -2,10 +2,9 @@
 // Function akan mengembalikan nilai FPB (Faktor Persekutuan Terbesar).
 //  FPB dari dua bilangan merupakan bilangan bulat positif terbesar yang dapat membagi habis kedua bilangan tersebut.
 
-// Faktor Persekutuan Terbesar
+// Faktor Persekutuan Terbesar FPB
 
 function fpb(angka1, angka2) {
-    // console.log(angka1, angka2)
   for (let i=angka1; i > 0; i--) {
     if (angka2 % i === 0 && angka1 % i ===0) {
       return i;
