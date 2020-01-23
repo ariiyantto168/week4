@@ -26,9 +26,11 @@ Level kedalaman array akan di-asumsikan selalu 3, [ [ [ ] ] ],
  **/
 
 function deepSum (arr) {
-    let i=0;
-    let countArr = 0;
 
+    let i=0;
+    let counter = 0;
+    
+    
     if (arr.length !== 0) {
         for (i; i<arr.length; i++) {
             let j=0;
@@ -37,19 +39,19 @@ function deepSum (arr) {
                 let k = 0;
                 let lengthK = arr[i][j].length;
                 for (k; k<lengthK; k++) {
-                    countArr += arr[i][j][k];
+                    counter += arr[i][j][k];
                 }
             }
         }
         
-        // mengembalikan nilai countArr
-        return countArr;
+        return counter;
         
     } else { // kondisi apabila arr = array kosong
         return 'No number!';
     }
-
 }
+
+
   
   //TEST CASE
   console.log(deepSum([
