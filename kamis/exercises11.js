@@ -22,7 +22,7 @@
 
 function shoppingTime(memberId, money) {
     
-const list = [['Sepatu Stacattu', 1500000], ['Baju Zoro', 500000], ['Baju H&N', ], ['Sweater Uniklooh', 175000], ['Casing Handphone', 50000]];
+const list = [['Sepatu Stacattu', 1500000], ['Baju Zoro', 500000], ['Baju H&M', 250000], ['Sweater Unikloh', 175000], ['Casing Handphone', 50000]];
 let tampung = [];
 let simpan = {};
 let uang = money;
