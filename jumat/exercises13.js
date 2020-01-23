@@ -34,8 +34,8 @@ function deepSum (arr) {
     if (arr.length !== 0) {
         for (i; i<arr.length; i++) {
             let j=0;
-            let lengthJ = arr[i].length;
-            for (j; j<lengthJ; j++) {
+            let lj = arr[i].length;
+            for (j; j<lj; j++) {
                 let k = 0;
                 let lengthK = arr[i][j].length;
                 for (k; k<lengthK; k++) {
@@ -49,6 +49,7 @@ function deepSum (arr) {
     } else { // kondisi apabila arr = array kosong
         return 'No number!';
     }
+    
 }
 
 
