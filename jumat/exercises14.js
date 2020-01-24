@@ -12,28 +12,44 @@ Contoh: input: [['Dimitri', 'B', 'F']] output: [{ penumpang: 'Dimitri', naikDari
 
 function naikAngkot(arrPenumpang) {
     rute = ['A', 'B', 'C', 'D', 'E', 'F'];
-
-    let tampung = [];
-    let tempat = {};
-    let i = 0;
+    let angkot = [{},{}];
+    let i=0;
     let asal = '';
     let tujuan = '';
-
-    for (i; i < arrPenumpang.length; i++) {
+  
+    
+    for (i; i<arrPenumpang.length; i++) {
         let j = 0;
-        return arrPenumpang
-
-        for (j; j < arrPenumpang.length; j++) {
-            switch (j){
+        for (j; j<arrPenumpang[i].length; j++) {
+            switch (j) {
                 case 0: {
-                    tampung[i].push(tempat.penumpang) = arrPenumpang[i][j]
+                    angkot[i].penumpang = arrPenumpang[i][j];
+                    break;
+                } case 1: {
+                    angkot[i].naikDari = arrPenumpang[i][j];
+                    angkot[i].tujuan = arrPenumpang[i][j+1];
+                    break;
+                } case 2: {
+                    asal = arrPenumpang[i][j-1];
+                    tujuan = arrPenumpang[i][j];
+                    let jarak = 0;
+                    for (let k=0; k<rute.length; k++) {
+                        if (rute[k] === asal) {
+                            for (let l=k+1; l<rute.length; l++) {
+                                jarak += 1;
+                                if (rute[l] === tujuan) {
+                                    let bayar = jarak * 2000;
+                                    angkot[i].bayar = bayar;
+                                }
+                            }
+                        }
+                    }
+                    break;
                 }
             }
-         
         }
     }
-    return tampung
-    
+  return angkot;
 }
   
   //TEST CASE
