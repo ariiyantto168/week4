@@ -22,11 +22,6 @@ logic challange shoppers
 
 
 function countProfit(shoppers) {
-    // let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
-    //                    ['Baju Zoro', 500000, 2],
-    //                    ['Sweater Uniklooh', 175000, 1]
-    //                  ];
-  
 	let listBarang = [
 		['Sepatu Stacattu', 1500000, 10],
 		['Baju Zoro', 500000, 2],
