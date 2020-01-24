@@ -7,6 +7,17 @@
 
 
 function urutkanAbjad(str) {
+  let abjadKamus = 'abcdefghijklmnopqrstuvwxyz';
+  let output = '';
+
+  for(let i = 0; i< abjadKamus.length; i++){
+      for(let j = 0; j< str.length; j++){
+          if(abjadKamus[i]==str[j]){
+              output+= abjadKamus[i]
+          }
+      }
+  }
+  return output
     
 }
   
