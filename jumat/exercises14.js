@@ -1,5 +1,5 @@
 /*
-Logic Challenge - Naik Angkot
+Logic Challenge - Naik Angkot exercises 14
 
 Problem
 Diberikan function naikAngkot(listPenumpang) yang akan menerima satu parameter berupa array dua
