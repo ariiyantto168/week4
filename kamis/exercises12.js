@@ -16,6 +16,8 @@ maka pembeli batal untuk membeli barang tersebut.
 Function countProfit akan mengembalikan/me-return sebuah array of object dimana array tersebut
 berisi objek-objek barang dari toko X tersebut yang berisikan info nama barang, siapa saja yang
 membeli, sisa stock barang dan total pemasukan untuk barang tersebut
+
+logic challange shoppers
 */
 
 
@@ -105,7 +107,6 @@ function countProfit(shoppers) {
 		}
 	}
 	result.push(shoes, shirt, sweater);
-	//console.log(result);
 	return result;
 
 }
